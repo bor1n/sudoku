@@ -1,0 +1,3 @@
+C:\Users\kapuc\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\211.7142.21\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\stepik.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\stepik.dir/objects.a @CMakeFiles\stepik.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\stepik.dir/objects.a -Wl,--no-whole-archive -o stepik.exe -Wl,--out-implib,libstepik.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\stepik.dir\linklibs.rsp
