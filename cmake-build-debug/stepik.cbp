@@ -85,9 +85,6 @@
 		<Unit filename="C:/Users/kapuc/CLionProjects/stepik/another.cpp">
 			<Option target="stepik"/>
 		</Unit>
-		<Unit filename="C:/Users/kapuc/CLionProjects/stepik/main.cpp">
-			<Option target="stepik"/>
-		</Unit>
 		<Unit filename="C:/Users/kapuc/CLionProjects/stepik/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

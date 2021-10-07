@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/kapuc/CLionProjects/stepik/main.cpp
+C:/Users/kapuc/CLionProjects/stepik/another.cpp
 string
 -
 iostream
+-
+vector
+-
+ctime
+-
+algorithm
 -
 

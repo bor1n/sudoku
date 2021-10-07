@@ -3,4 +3,4 @@ project(stepik)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(stepik main.cpp another.cpp)
+add_executable(stepik another.cpp)
