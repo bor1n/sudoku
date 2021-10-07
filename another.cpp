@@ -88,11 +88,21 @@ public:
 		return (0);
 	}
 
+	void empty_field()
+	{
+		for (auto &i : field)
+		{
+			for (int &j : i)
+			{
+				j = 0;
+			}
+		}
+	}
 
 	int fill_field()
 	{
 		srand(time(NULL));
-		int stepback = 2;
+		int iterations = 1;
 		vector<int> pool;
 		for (int y = 0; y < size; ++y)
 		{
@@ -103,27 +113,10 @@ public:
 					this->refill_pool(&pool, x, y);
 				} catch (const char *err)
 				{
-					if (x > 0)
-					{
-						field[x - 1][y] = 0;
-						x -= stepback;
-						stepback++;
-						srand(time(NULL));
-						continue;
-					}
-					else if (x == 0)
-					{
-						for (auto &i : field)
-						{
-							i[y - 1] = 0;
-						}
-						y -= stepback;
-						stepback++;
-						srand(time(NULL));
-						break;
-					}
-
-
+					iterations++;
+					empty_field();
+					y = -1;
+					break;
 				}
 
 				int next_value = this->get_random_value(pool);
@@ -132,6 +125,7 @@ public:
 				insert(next_number);
 			}
 		}
+		cout << "Iterations: " << iterations << endl;
 		return (0);
 	}
 	void print_field()
